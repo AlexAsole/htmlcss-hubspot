@@ -13,7 +13,6 @@ body{
 .container{
   width: 1200px;
   margin: 0 auto;
-  border: 1px dashed #00f;
 }
 /* reset per float */
 .clearfix::after{
@@ -33,25 +32,67 @@ body{
 .navbar{
   width: 100%;
   height: 60px;
-  background-color: yellow;
-  border: 1px solid black;
 }
 /* box nelle navbar */
 .navbox{
-  height: 60px;
+  /* height: 60px; */
   line-height: 60px;
+}
+/* bottone */
+.button{
+  max-width: 200px;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+/* bottone bianco */
+.type-a{
+  border: 2px solid #fc8d44;
+  background-color: #fff;
+}
+/* bottone arancione */
+.type-b{
+  background-color: #fc8d44;
+}
+/* link bottone bianco */
+.type-a > a{
+  color: #fc8d44;
+}
+/* link bottone arancione */
+.type-b > a{
+  color: #fff;
 }
 /* edit link */
 a{
   text-decoration: none;
   color: #000;
 }
-.button{
-  height: 60px;
-  line-height: 60px;
-  border: 1px solid #000;
-}
+
 /* SELECTED AND SINGLE CLASS */
+.navbar:first-child{
+  background-color: #c9f3ff;
+  border-bottom: 1px solid #000;
+
+}
+/* prima navbar - liste orizzontali */
+header > .navbar:first-child > .container > .navbox > ul > li{
+  display: inline-block;
+  padding: 0 20px;
+}
+/* prima navbar - bordo nella lista */
+header > .navbar:first-child > .container >.fl > ul > li:first-child{
+  border-right: 1px solid #000;
+}
+/* prima navbar - liste orizzontali */
+header > .navbar:nth-child(2) > .container > .navbox > ul > li{
+  display: inline-block;
+  padding: 0 20px;
+}
+/* centratura logo in navbar 2 */
+.logo{
+  margin-top: 10px;
+}
 /* edit jumbotron */
 .jumbotron{
   width: 100%;
@@ -67,15 +108,21 @@ a{
 .mainjumbo{
   width: 450px;
   height: 300px;
-  background-color: #f00;
-  border: 1px solid #000;
+  font-size: 22px;
 }
-/* prima navbar - liste orizzontali */
-header > .navbar:first-child > .container > .navbox > ul > li{
-  display: inline-block;
-  padding: 0 20px;
+.mainjumbo > h1{
+  padding-bottom: 20px;
 }
-/* prima navbar - bordo nella lista */
-header > .navbar:first-child > .container >.fl > ul > li:first-child{
-  border-right: 1px solid #000;
+.mainjumbo > p:first-of-type{
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.mainjumbo > p:nth-of-type(2){
+  font-size: 10px;
+  padding-top: 20px;
+}
+header > .navbar:last-child{
+  background-color: grey;
+  border-top: 3px solid brown;
+  border-bottom: 3px solid brown;
 }
