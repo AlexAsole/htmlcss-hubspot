@@ -45,6 +45,7 @@ body{
   line-height: 35px;
   padding: 0 20px;
   border-radius: 5px;
+  text-align: center;
 }
 /* bottone bianco */
 .type-a{
@@ -70,6 +71,7 @@ a{
 }
 
 /* SELECTED AND SINGLE CLASS */
+/* HEADER */
 .navbar:first-child{
   background-color: #c9f3ff;
   border-bottom: 1px solid #000;
@@ -110,19 +112,42 @@ header > .navbar:nth-child(2) > .container > .navbox > ul > li{
   height: 300px;
   font-size: 22px;
 }
+/* titolo mainjumbo */
 .mainjumbo > h1{
   padding-bottom: 20px;
 }
+/* paragrafo mainjumbo */
 .mainjumbo > p:first-of-type{
   font-size: 16px;
   padding-bottom: 20px;
 }
+/* nota a piè di pagina mainjumbo */
 .mainjumbo > p:nth-of-type(2){
   font-size: 10px;
   padding-top: 20px;
 }
+/* barra grigia header */
 header > .navbar:last-child{
   background-color: grey;
   border-top: 3px solid brown;
   border-bottom: 3px solid brown;
+}
+/* END HEADER */
+/* MAIN */
+/* main-first colore sfondo */
+.main-first{
+  background-color: #c9f3ff;
+  height: 1000px;
+  text-align: center;
+}
+/* main-first immagine centrata */
+.main-first > .container > img{
+  padding-top: 50px ;
+  padding-bottom: 15px;
+}
+/* main-first paragrafo centrato */
+.main-first > .container > p{
+  width: 600px;
+  display: inline-block;
+  padding-top: 15px;
 }
