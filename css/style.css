@@ -1,0 +1,81 @@
+/* REPEATEABLE CLASS  AND TAGS*/
+/* reset */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* width minimo */
+body{
+  min-width: 1200px;
+}
+/* contenitore 1200px */
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px dashed #00f;
+}
+/* reset per float */
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+/* float sinistra */
+.fl{
+  float: left;
+}
+/* float destra */
+.fr{
+  float: right;
+}
+/* navbar */
+.navbar{
+  width: 100%;
+  height: 60px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+/* box nelle navbar */
+.navbox{
+  height: 60px;
+  line-height: 60px;
+}
+/* edit link */
+a{
+  text-decoration: none;
+  color: #000;
+}
+.button{
+  height: 60px;
+  line-height: 60px;
+  border: 1px solid #000;
+}
+/* SELECTED AND SINGLE CLASS */
+/* edit jumbotron */
+.jumbotron{
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/jumbotron.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #fff5ee;
+  padding: 50px;
+}
+/* titolo jumbodron */
+.mainjumbo{
+  width: 450px;
+  height: 300px;
+  background-color: #f00;
+  border: 1px solid #000;
+}
+/* prima navbar - liste orizzontali */
+header > .navbar:first-child > .container > .navbox > ul > li{
+  display: inline-block;
+  padding: 0 20px;
+}
+/* prima navbar - bordo nella lista */
+header > .navbar:first-child > .container >.fl > ul > li:first-child{
+  border-right: 1px solid #000;
+}
