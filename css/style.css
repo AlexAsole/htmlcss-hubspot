@@ -57,11 +57,11 @@ body{
   background-color: #fc8d44;
 }
 /* link bottone bianco */
-.type-a > a{
+a > .type-a{
   color: #fc8d44;
 }
 /* link bottone arancione */
-.type-b > a{
+a > .type-b{
   color: #fff;
 }
 /* edit link */
@@ -98,11 +98,10 @@ header > .navbar:nth-child(2) > .container > .navbox > ul > li{
 /* edit jumbotron */
 .jumbotron{
   width: 100%;
-  height: 500px;
+  height: 610px;
   background-image: url(../img/jumbotron.png);
-  background-size: 90%;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right top;
   background-color: #fff5ee;
   padding: 50px;
 }
