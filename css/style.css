@@ -73,8 +73,6 @@ a{
 }
 .box{
   max-width: 600px;
-  border: 1px solid #000;
-  background-color: yellow;
 }
 
 /* SELECTED AND SINGLE CLASS */
@@ -175,9 +173,15 @@ header > .navbar:last-child{
 .main:nth-of-type(2) > .container > .fr{
   text-align: left;
 }
+.main:nth-of-type(2) > .container > .fr > h2{
+  padding-bottom: 25px;
+}
 /* bold allo span nel box destro del secondo container */
 .main:nth-of-type(2) > .container > .fr > span{
   font-weight: bolder;
+  margin: 25px 0;
+  display: inline-block;
+
 }
 /* lista orizzontale nel box destro del secondo container */
 .main:nth-of-type(2) > .container > .fr > ul > li{
