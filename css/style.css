@@ -79,7 +79,6 @@ main{
 /* box nel main */
 .box{
   max-width: 600px;
-  border: 1px solid black;
 }
 /* inbox nei box */
 .inbox{
