@@ -74,7 +74,10 @@ a{
 .box{
   max-width: 600px;
 }
-
+.inbox{
+  max-width: 600px;
+  text-align: center;
+}
 /* SELECTED AND SINGLE CLASS */
 /* HEADER */
 .navbar:first-child{
@@ -190,4 +193,7 @@ header > .navbar:last-child{
 /* check allineati al testo nella lista */
 .main:nth-of-type(2) > .container > .fr > ul > li > img{
   vertical-align: bottom;
+}
+.main:nth-of-type(3) > .container > .box{
+  width: 33%;
 }
