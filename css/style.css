@@ -71,9 +71,16 @@ a{
   text-decoration: none;
   color: #000;
 }
+/* colore sfondo main */
+main{
+  background-color: #c9f3ff;
+  text-align: center;
+}
+/* box nel main */
 .box{
   max-width: 600px;
 }
+/* inbox nei box */
 .inbox{
   max-width: 600px;
   text-align: center;
@@ -141,59 +148,68 @@ header > .navbar:last-child{
 }
 /* END HEADER */
 /* MAIN */
-/* main colore sfondo */
-.main{
-  background-color: #c9f3ff;
-  text-align: center;
-}
 /* main immagine centrata */
-.main:first-of-type > .container > img{
+main > .container:first-of-type > img{
   padding-top: 50px ;
   padding-bottom: 15px;
 }
 /* main paragrafo centrato */
-.main:first-of-type > .container > p{
+main > .container:first-of-type > p{
   width: 600px;
   display: inline-block;
   padding-top: 15px;
 }
 /* padding del secondo container */
-.main:nth-of-type(2) > .container{
+main > .container:nth-of-type(2){
   padding: 50px 100px;
 }
 /* padding dell'immagine nel box sinistro del secondo container  */
-.main:nth-of-type(2) > .container > .fl > img{
+main > .container:nth-of-type(2) > .fl > img{
   padding-top: 10px;
   padding-bottom: 50px;
 }
 /* editing bottone link nel box sinistro del secondo container */
-.main:nth-of-type(2) > .container > .fl > a > .button{
+main > .container:nth-of-type(2) > .fl > a > .button{
   margin-bottom: 20px;
   height: 45px;
   line-height: 45px;
 }
 /* allineamento testo nel box destro del secondo container */
-.main:nth-of-type(2) > .container > .fr{
+main > .container:nth-of-type(2) > .fr{
   text-align: left;
 }
-.main:nth-of-type(2) > .container > .fr > h2{
+/* titolo nel box destro del secondo container  */
+main > .container:nth-of-type(2) > .fr > h2{
   padding-bottom: 25px;
 }
 /* bold allo span nel box destro del secondo container */
-.main:nth-of-type(2) > .container > .fr > span{
+main > .container:nth-of-type(2) > .fr > span{
   font-weight: bolder;
   margin: 25px 0;
   display: inline-block;
-
 }
 /* lista orizzontale nel box destro del secondo container */
-.main:nth-of-type(2) > .container > .fr > ul > li{
+main > .container:nth-of-type(2) > .fr > ul > li{
   display: inline-block;
 }
 /* check allineati al testo nella lista */
-.main:nth-of-type(2) > .container > .fr > ul > li > img{
+main > .container:nth-of-type(2) > .fr > ul > li > img{
   vertical-align: bottom;
 }
-.main:nth-of-type(3) > .container > .box{
+/* padding-top del terzo container */
+main > .container:nth-of-type(3){
+  padding-top: 20px;
+}
+/* dimensioni box del terzo container */
+main > .container:nth-of-type(3) > .box{
   width: 33%;
+}
+/* padding del titolo dei box del terzo container */
+main > .container:nth-of-type(3) > .box > .inbox > h3{
+  padding: 15px 0 ;
+}
+/* edit del paragrafo dei box del terzo container */
+main > .container:nth-of-type(3) > .box > .inbox > p{
+  width: 50%;
+  display: inline-block;
 }
