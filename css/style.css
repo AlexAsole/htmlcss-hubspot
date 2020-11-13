@@ -79,10 +79,10 @@ main{
 /* box nel main */
 .box{
   max-width: 600px;
+  border: 1px solid black;
 }
 /* inbox nei box */
 .inbox{
-  max-width: 600px;
   text-align: center;
 }
 /* SELECTED AND SINGLE CLASS */
@@ -199,6 +199,11 @@ main > .container:nth-of-type(2) > .fr > ul > li > img{
 /* padding-top del terzo container */
 main > .container:nth-of-type(3){
   padding-top: 20px;
+  padding-bottom: 60px;
+}
+/* margine verticale tra i box interni del terzo contenitore */
+main > .container:nth-of-type(3) > .box > .inbox:first-of-type{
+  margin-bottom: 70px;
 }
 /* dimensioni box del terzo container */
 main > .container:nth-of-type(3) > .box{
@@ -212,4 +217,20 @@ main > .container:nth-of-type(3) > .box > .inbox > h3{
 main > .container:nth-of-type(3) > .box > .inbox > p{
   width: 50%;
   display: inline-block;
+}
+main > .container:nth-of-type(3) > .box > .inbox > h4{
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+main > .container:nth-of-type(3) > .box > .inbox > ul{
+  list-style-image: url(../img/check-orange.png);
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 50px;
+}
+main > .container:nth-of-type(3) > .box > .inbox > div{
+  margin:0 auto;
+}
+main > .container:nth-of-type(3) > .box > .inbox > div > a{
+  color: #fff;
 }
