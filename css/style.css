@@ -8,6 +8,7 @@
 /* width minimo */
 body{
   min-width: 1200px;
+  font-family: 'Roboto', sans-serif;
 }
 /* contenitore 1200px */
 .container{
