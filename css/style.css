@@ -12,6 +12,7 @@ body{
 }
 /* contenitore 1200px */
 .container{
+  border: 1px dashed #00f;
   width: 1200px;
   margin: 0 auto;
 }
@@ -69,6 +70,11 @@ a > .type-b{
 a{
   text-decoration: none;
   color: #000;
+}
+.box{
+  max-width: 600px;
+  border: 1px solid #000;
+  background-color: yellow;
 }
 
 /* SELECTED AND SINGLE CLASS */
@@ -134,20 +140,50 @@ header > .navbar:last-child{
 }
 /* END HEADER */
 /* MAIN */
-/* main-first colore sfondo */
-.main-first{
+/* main colore sfondo */
+.main{
   background-color: #c9f3ff;
-  height: 1000px;
   text-align: center;
 }
-/* main-first immagine centrata */
-.main-first > .container > img{
+/* main immagine centrata */
+.main:first-of-type > .container > img{
   padding-top: 50px ;
   padding-bottom: 15px;
 }
-/* main-first paragrafo centrato */
-.main-first > .container > p{
+/* main paragrafo centrato */
+.main:first-of-type > .container > p{
   width: 600px;
   display: inline-block;
   padding-top: 15px;
+}
+/* padding del secondo container */
+.main:nth-of-type(2) > .container{
+  padding: 50px 100px;
+}
+/* padding dell'immagine nel box sinistro del secondo container  */
+.main:nth-of-type(2) > .container > .fl > img{
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+/* editing bottone link nel box sinistro del secondo container */
+.main:nth-of-type(2) > .container > .fl > a > .button{
+  margin-bottom: 20px;
+  height: 45px;
+  line-height: 45px;
+}
+/* allineamento testo nel box destro del secondo container */
+.main:nth-of-type(2) > .container > .fr{
+  text-align: left;
+}
+/* bold allo span nel box destro del secondo container */
+.main:nth-of-type(2) > .container > .fr > span{
+  font-weight: bolder;
+}
+/* lista orizzontale nel box destro del secondo container */
+.main:nth-of-type(2) > .container > .fr > ul > li{
+  display: inline-block;
+}
+/* check allineati al testo nella lista */
+.main:nth-of-type(2) > .container > .fr > ul > li > img{
+  vertical-align: bottom;
 }
