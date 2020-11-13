@@ -84,6 +84,15 @@ main{
 .inbox{
   text-align: center;
 }
+/* sfondo particolare */
+.particular{
+  background-image: linear-gradient(to top right, #008080, #90ee90);
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  color: #fff;
+
+}
 /* SELECTED AND SINGLE CLASS */
 /* HEADER */
 .navbar:first-child{
@@ -217,19 +226,36 @@ main > .container:nth-of-type(3) > .box > .inbox > p{
   width: 50%;
   display: inline-block;
 }
+/* titolo secondo inbox del terzo container */
 main > .container:nth-of-type(3) > .box > .inbox > h4{
   text-transform: uppercase;
   padding: 15px 0;
 }
+/* edit lista con check del terzo container */
 main > .container:nth-of-type(3) > .box > .inbox > ul{
   list-style-image: url(../img/check-orange.png);
   display: inline-block;
   text-align: left;
   padding-bottom: 50px;
 }
+/* centratura bottone del terzo contenitore */
 main > .container:nth-of-type(3) > .box > .inbox > div{
   margin:0 auto;
 }
+/* colore bottone del terzo contenitore */
 main > .container:nth-of-type(3) > .box > .inbox > div > a{
   color: #fff;
+}
+/* edit titolo particular */
+.particular > .container > h2{
+  width: 70%;
+  font-size: 26px;
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* box particular */
+.particular > .container:nth-of-type(2) > .clearfix > .fl{
+  width: 25%;
+  border: 1px solid #000;
 }
