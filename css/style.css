@@ -108,6 +108,10 @@ main{
   vertical-align: 7px;
 
 }
+/* sfondo ultima parte del main */
+.background{
+  background-color: #fff;
+}
 /* SELECTED AND SINGLE CLASS */
 /* HEADER */
 .navbar:first-child{
@@ -294,7 +298,7 @@ main > .container:nth-of-type(3) > .box > .inbox > div > a{
 .boxp:first-child, .boxp:nth-child(2), .boxp:nth-child(3), .boxp:nth-child(4){
   border-bottom: 1px solid #fff;
 }
-/* distanziamento immagini nel particular */
+/* distanziamento immagini nel particulaar */
 .boxp > img{
   padding: 30px 0;
 }
@@ -302,4 +306,41 @@ main > .container:nth-of-type(3) > .box > .inbox > div > a{
 .boxp > p{
   font-size: 14px;
   padding: 30px 0 ;
+}
+/* centratura testo a sinistra nel float a sinistra del quinto container */
+.background > .container:first-child > .box{
+text-align: left;
+}
+.background > .container:first-child{
+  padding: 70px 0 30px 0;
+}
+.background > .container:first-child > .box:first-child{
+  padding-left: 120px;
+}
+/* titolo del float sinistro del quinto container */
+.background > .container:first-child > .box:first-child > h2{
+  font-size: 40px;
+}
+/* testo del float sinistro del quinto container */
+.background > .container:first-child > .box:first-child > ul > li{
+  list-style: none;
+}
+/* bold nel testo */
+.background > .container:first-child > .box:first-child > ul > li > span{
+  font-weight: bold;
+}
+/* float destro del quinto container */
+.background > .container:first-child > .box:last-child{
+  width: 600px;
+  padding-right: 120px;
+}
+/* dimensioni box float destro del quinto container */
+.background > .container:first-child > .box > .inbox{
+  width: 25%;
+  height: 50px;
+  margin-bottom: 50px;
+}
+/* ridimensionamento immagini */
+.background > .container:first-child > .box > .inbox > img{
+  width: 80%;
 }
