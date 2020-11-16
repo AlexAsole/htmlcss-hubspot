@@ -86,11 +86,26 @@ main{
 }
 /* sfondo particolare */
 .particular{
-  background-image: linear-gradient(to top right, #008080, #90ee90);
+  background-image: linear-gradient(45deg,#00a4bd,#00bda5);
   width: 100%;
-  height: 600px;
   text-align: center;
   color: #fff;
+
+}
+/* box particular */
+.boxp{
+  width: 25%;
+}
+/* font numeri nei particular */
+.num{
+  font-size: 40px;
+  font-weight: bolder;
+}
+/* simbolo + dopo numeri nei particular */
+.plus::after{
+  content: "+";
+  font-size: 0.5em;
+  vertical-align: 7px;
 
 }
 /* SELECTED AND SINGLE CLASS */
@@ -195,6 +210,19 @@ main > .container:nth-of-type(2) > .fr > span{
   font-weight: bolder;
   margin: 25px 0;
   display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 20px;
+}
+/* linea nel box destro del secondo container */
+main > .container:nth-of-type(2) > .fr > span:before {
+    content: '';
+    display: block;
+    float: right;
+    width: 65%;
+    height: 2px;
+    margin-top: 9px;
+    background-color: #899397;
 }
 /* lista orizzontale nel box destro del secondo container */
 main > .container:nth-of-type(2) > .fr > ul > li{
@@ -247,15 +275,31 @@ main > .container:nth-of-type(3) > .box > .inbox > div > a{
   color: #fff;
 }
 /* edit titolo particular */
-.particular > .container > h2{
+.particular > .container:first-of-type > h2{
   width: 70%;
   font-size: 26px;
   display: inline-block;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* box particular */
-.particular > .container:nth-of-type(2) > .clearfix > .fl{
-  width: 25%;
-  border: 1px solid #000;
+/* margine del secondo container in particular */
+.particular > .container:nth-of-type(2){
+  margin-top: 50px;
+}
+/* bordi a destra dei box in particular */
+.boxp:first-child, .boxp:nth-child(2), .boxp:nth-child(3), .boxp:nth-child(5), .boxp:nth-child(6), .boxp:nth-child(7){
+  border-right: 1px solid #fff;
+}
+/* bordi centrali dei box in particular */
+.boxp:first-child, .boxp:nth-child(2), .boxp:nth-child(3), .boxp:nth-child(4){
+  border-bottom: 1px solid #fff;
+}
+/* distanziamento immagini nel particular */
+.boxp > img{
+  padding: 30px 0;
+}
+/* edit testi minuscoli in box dei particular */
+.boxp > p{
+  font-size: 14px;
+  padding: 30px 0 ;
 }
