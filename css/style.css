@@ -12,7 +12,6 @@ body{
 }
 /* contenitore 1200px */
 .container{
-  border: 1px dashed #00f;
   width: 1200px;
   margin: 0 auto;
 }
@@ -37,7 +36,7 @@ body{
 }
 /* box nelle navbar */
 .navbox{
-  /* height: 60px; */
+  height: 60px;
   line-height: 60px;
 }
 /* bottone */
@@ -126,10 +125,15 @@ main{
 footer{
   background-color: #32495b;
   color: #fff;
+  padding: 20px 0 20px 0;
 }
-/* icone */
-i{
-  width: 15%;
+/* bordo orizzontale */
+.borderx{
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 98%;
+  height: 1px;
+  background-color: #fff;
 }
 /* SELECTED AND SINGLE CLASS */
 /* HEADER */
@@ -138,14 +142,19 @@ i{
   border-bottom: 1px solid #000;
 
 }
-/* prima navbar - liste orizzontali */
-header > .navbar:first-child > .container > .navbox > ul > li{
-  display: inline-block;
+/* prima navbar - padding del box sinistro del header */
+header > .navbar:first-child > .container > .navbox > i{
   padding: 0 20px;
 }
-/* prima navbar - bordo nella lista */
-header > .navbar:first-child > .container >.fl > ul > li:first-child{
-  border-right: 1px solid #000;
+/* prima navbar - divisore nel box sinistro del header */
+header > .navbar:first-child > .container >.fl > span{
+  border-left: 1px solid #ccc;
+  padding-left: 20px;
+}
+/* edit lista orizzontale header prima navbar */
+header > .navbar:first-child > .container > .fr > ul > li{
+  display: inline-block;
+  padding-right: 35px;
 }
 /* prima navbar - liste orizzontali */
 header > .navbar:nth-child(2) > .container > .navbox > ul > li{
@@ -328,11 +337,13 @@ main > .container:nth-of-type(3) > .box > .inbox > div > a{
 }
 /* centratura testo a sinistra nel float a sinistra del quinto container */
 .background > .container:first-child > .box{
-text-align: left;
+  text-align: left;
 }
+/* posizionamento del quinto container */
 .background > .container:first-child{
   padding: 70px 0 30px 0;
 }
+/* posizionamento box sinistro del quinto container */
 .background > .container:first-child > .fl{
   padding-left: 120px;
 }
@@ -363,44 +374,87 @@ text-align: left;
 .background > .container:first-child > .fr > .inbox > img{
   width: 80%;
 }
+/* edit box sinistro del sesto container */
 .background > .container:nth-child(2) > .fl{
   width: 40%;
   text-align: left;
   padding: 20px 0;
 }
+/* titolo del box sinistro del sesto contenitore */
 .background > .container:nth-child(2) > .fl > h2{
   font-size: 35px;
   font-weight: bolder;
 }
+/* edit button */
 .background > .container:nth-child(2) > .fl > a > .button{
   height: 60px;
   line-height: 60px;
 }
+/* edit primo paragrafo */
 .background > .container:nth-child(2) > .fl > p:first-of-type{
   font-size: 15px;
   width: 80%;
   font-weight: lighter;
   padding: 40px 0;
 }
+/* edit secondo paragrafo */
 .background > .container:nth-child(2) > .fl > p:last-of-type{
   font-size: 10px;
   font-weight: lighter;
   padding-top: 40px;
 }
+/* dimensioni img del sesto container */
 .background > .container:nth-child(2) > .fr > img{
   width: 50%;
   height: 50%;
 }
 /* END MAIN */
 /* FOOTER */
+/* box della prima row del footer */
 footer > .container > .clearfix > .box{
   width: 25%;
 }
+/* titoli dei box */
 footer > .container > .clearfix > .box > h5{
   font-size: 16px;
   padding: 20px 0 20px 0;
 }
+/* liste dei box */
 footer > .container > .clearfix > .box > ul > li{
   list-style-type: none;
   padding: 10px 0 10px 0;
+}
+/* icone nel footer */
+footer > .container > .clearfix > .box > ul > li > i{
+  width: 15%;
+}
+/* lista delle lingue */
+footer > .container:nth-child(2) > ul{
+  width: 700px;
+  margin: 0 auto;
+}
+/* lista orizzontale */
+footer > .container:nth-child(2) > ul > li{
+  display: inline-block;
+  padding: 0 20px 0 20px;
+}
+/* container finale del footer rimpicciolito */
+footer > .container:last-child{
+  width: 1176px;
+  margin: 0 auto;
+}
+/* posizionamento box sinistro del container finale */
+footer > .container:last-child > .fl{
+  padding: 20px 0 20px 0;
+}
+/* edit paragrafo  */
+footer > .container:last-child > .fl > p{
+  font-size: 14px;
+  padding-top: 5px;
+  font-weight: lighter;
+}
+/* lista orizzontale del box destro del footer */
+footer > .container:last-child > .fr > ul > li{
+  display: inline-block;
+  padding: 20px 50px 20px 50px;
 }
