@@ -58,6 +58,10 @@ body{
 .type-b{
   background-color: #fc8d44;
 }
+/* bottone bianco del footer */
+.type-c{
+  background-color: #fff;
+}
 /* link bottone bianco */
 a > .type-a{
   color: #fc8d44;
@@ -65,6 +69,12 @@ a > .type-a{
 /* link bottone arancione */
 a > .type-b{
   color: #fff;
+}
+/* link bottone biano del footer */
+a > .type-c{
+  text-decoration: none;
+  color: #32495b;
+  font-size: 14px;
 }
 /* edit link */
 a{
@@ -111,6 +121,15 @@ main{
 /* sfondo ultima parte del main */
 .background{
   background-color: #fff;
+}
+/* sfondo footer */
+footer{
+  background-color: #32495b;
+  color: #fff;
+}
+/* icone */
+i{
+  width: 15%;
 }
 /* SELECTED AND SINGLE CLASS */
 /* HEADER */
@@ -371,4 +390,17 @@ text-align: left;
 .background > .container:nth-child(2) > .fr > img{
   width: 50%;
   height: 50%;
+}
+/* END MAIN */
+/* FOOTER */
+footer > .container > .clearfix > .box{
+  width: 25%;
+}
+footer > .container > .clearfix > .box > h5{
+  font-size: 16px;
+  padding: 20px 0 20px 0;
+}
+footer > .container > .clearfix > .box > ul > li{
+  list-style-type: none;
+  padding: 10px 0 10px 0;
 }
