@@ -314,33 +314,61 @@ text-align: left;
 .background > .container:first-child{
   padding: 70px 0 30px 0;
 }
-.background > .container:first-child > .box:first-child{
+.background > .container:first-child > .fl{
   padding-left: 120px;
 }
 /* titolo del float sinistro del quinto container */
-.background > .container:first-child > .box:first-child > h2{
+.background > .container:first-child > .fl > h2{
   font-size: 40px;
 }
 /* testo del float sinistro del quinto container */
-.background > .container:first-child > .box:first-child > ul > li{
+.background > .container:first-child > .fl > ul > li{
   list-style: none;
 }
 /* bold nel testo */
-.background > .container:first-child > .box:first-child > ul > li > span{
+.background > .container:first-child > .fl > ul > li > span{
   font-weight: bold;
 }
 /* float destro del quinto container */
-.background > .container:first-child > .box:last-child{
+.background > .container:first-child > .fr{
   width: 600px;
   padding-right: 120px;
 }
 /* dimensioni box float destro del quinto container */
-.background > .container:first-child > .box > .inbox{
+.background > .container:first-child > .fr > .inbox{
   width: 25%;
   height: 50px;
   margin-bottom: 50px;
 }
 /* ridimensionamento immagini */
-.background > .container:first-child > .box > .inbox > img{
+.background > .container:first-child > .fr > .inbox > img{
   width: 80%;
+}
+.background > .container:nth-child(2) > .fl{
+  width: 40%;
+  text-align: left;
+  padding: 20px 0;
+}
+.background > .container:nth-child(2) > .fl > h2{
+  font-size: 35px;
+  font-weight: bolder;
+}
+.background > .container:nth-child(2) > .fl > a > .button{
+  height: 60px;
+  line-height: 60px;
+}
+.background > .container:nth-child(2) > .fl > p:first-of-type{
+  font-size: 15px;
+  width: 80%;
+  font-weight: lighter;
+  padding: 40px 0;
+}
+.background > .container:nth-child(2) > .fl > p:last-of-type{
+  font-size: 10px;
+  font-weight: lighter;
+  padding-top: 40px;
+}
+.background > .container:nth-child(2) > .fr > img{
+  width: 50%;
+  height: 50%;
 }
