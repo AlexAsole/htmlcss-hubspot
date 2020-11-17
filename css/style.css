@@ -14,7 +14,6 @@ body{
 .container{
   width: 1200px;
   margin: 0 auto;
-  border: 1px dashed blue;
 }
 /* reset per float */
 .clearfix::after{
@@ -89,7 +88,6 @@ main{
 /* box nel main */
 .box{
   max-width: 600px;
-  border: 1px solid black;
 }
 /* inbox nei box */
 .inbox{
@@ -233,6 +231,8 @@ main > .container:first-of-type > p{
 /* padding del secondo container */
 main > .container:nth-of-type(2){
   padding: 50px 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 /* padding dell'immagine nel box sinistro del secondo container  */
 main > .container:nth-of-type(2) > .fl > img{
