@@ -14,6 +14,7 @@ body{
 .container{
   width: 1200px;
   margin: 0 auto;
+  border: 1px dashed blue;
 }
 /* reset per float */
 .clearfix::after{
@@ -88,10 +89,25 @@ main{
 /* box nel main */
 .box{
   max-width: 600px;
+  border: 1px solid black;
 }
 /* inbox nei box */
 .inbox{
   text-align: center;
+}
+/* background dei box bianchi */
+.white{
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: #ccc 3px 3px 5px 5px;
+}
+/* divisore grigio dei box */
+.divisore{
+  width: 80%;
+  height: 2px;
+  background-color: #ccc;
+  margin: 0 auto;
+
 }
 /* sfondo particolare */
 .particular{
@@ -275,7 +291,12 @@ main > .container:nth-of-type(3) > .box > .inbox:first-of-type{
 }
 /* dimensioni box del terzo container */
 main > .container:nth-of-type(3) > .box{
-  width: 33%;
+  width: 366px;
+  padding: 30px 0 30px 0;
+}
+/* margini box centrale del terzo contenitore */
+main > .container:nth-of-type(3) > .box:nth-child(2){
+  margin: 0 50px;
 }
 /* padding del titolo dei box del terzo container */
 main > .container:nth-of-type(3) > .box > .inbox > h3{
@@ -369,10 +390,15 @@ main > .container:nth-of-type(3) > .box > .inbox > div > a{
   width: 25%;
   height: 50px;
   margin-bottom: 50px;
+  position: relative;
 }
 /* ridimensionamento immagini */
 .background > .container:first-child > .fr > .inbox > img{
   width: 80%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(50%,50%);
 }
 /* edit box sinistro del sesto container */
 .background > .container:nth-child(2) > .fl{
